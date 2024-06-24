@@ -6,17 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fix the Cascade</title>
     <link rel="stylesheet" href="style.css">
+<style>
+	.para { 
+	font-weight: bold; 
+	}
+	.small-para {
+	font-size: 12px;
+	font-weight: bold;
+	}
+	.buttons { 
+	display: flex;
+	padding: 2px; 
+	}
+	#confirm-button {
+	background-color: green;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	border: none;
+	height: 15px;
+	border: 2px solid black; 
+	}
+	#cancel-button { 
+	background-color: white; 
+	text-align: center;
+	color: black;
+	padding: 10px;
+	border: 2px solid black;
+	}
+	.text {
+	font-weight: normal; 
+	}
+	.text .child {
+	font-weight: bold;
+	font-size: 12px;
+	}
+	.cancel1 { 
+	border: none;
+	{
+</style>
   </head>
   <body>
-    <p class="para">I'm just a paragraph with extra bold text!</p>
+   <p class="para">I'm just a paragraph with extra bold text!</p>
     <p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
-
-    <button id="confirm-button" class="button confirm">Confirm</button>
-    <button id="cancel-button" class="button cancel">Cancel</button>
-
+<div class="buttons">
+ <button class="cancel1"><div id="confirm-button">Confirm</div></button>
+    <button class="cancel1"><div id="cancel-button">Cancel</div></button>
+</div>
     <div class="text">I'm a div with thin text!</div>
     <div class="text">I'm a div with thin text and a child div!
       <div class="text child">I'm a smaller child div with extra bold text.</div>
-    </div>
+	</div>
   </body>
 </html>
